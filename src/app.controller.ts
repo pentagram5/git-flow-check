@@ -7,6 +7,13 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    console.log('test1');
+    return this.appService.getHello();
+  }
+
+  @Post()
+  PostHello(): string {
+    console.log('test1');
     return this.appService.getHello();
   }
 
